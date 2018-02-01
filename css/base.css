@@ -1,0 +1,172 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font: 12px/150% "Microsoft Yahei",Arial,Verdana,"\5b8b\4f53";
+}
+a{
+    color:#333;
+    display: inline-block;
+}
+a:hover{
+    text-decoration: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/* number输入框不显示箭头 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0; 
+}
+input[type="number"]{-moz-appearance:textfield;}
+
+/* 头部样式 */
+.headNav{
+    width: 100%;
+    height: 30px;
+    background: #e5e5e5;
+    font-size: 12px;
+    line-height: 30px;
+}
+.headNavBox{
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.addressIcon{
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    background: url(../img/icon-group.png) no-repeat -60px -160px;
+}
+.addressBox{
+    cursor: pointer;
+}
+.headerNav{
+    margin-left: 20px;
+}
+header{
+    height: 144px;
+    width:1200px;
+    margin: 0 auto;
+}
+header .headerTop{
+    width: 1200px;
+}
+header .headerTop .logo{
+    margin: 20px 0 21px
+}
+header .headerTop .searchBox{
+    width: 580px;
+    height: 40px;
+    margin: 30px 0 0 192px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    overflow: hidden;
+}
+header .headerTop .searchBox .searchText{
+    display: inline-block;
+    width: 490px;
+    padding-left: 20px;
+    height: 40px;
+    border: 0 none;
+}
+header .headerTop .searchBox .searchSubmit{
+    width: 70px;
+    height: 40px;
+    border: 0 none;
+    color: #fff;
+    background: #0081cc;
+    cursor: pointer;
+}
+header .headerTop .callBox{
+    padding-top: 30px
+}
+header .headerTop .callBox .call{
+    height: 20px;
+    width: 147px;
+    text-align: right;
+    line-height: 20px;
+}
+header .headerBottom{
+    width: 1200px;
+    height: 40px;
+    overflow: hidden;
+    border-bottom: 2px solid #0081cc;
+}
+header .headerBottom>div{
+    margin: 0 20px;
+}
+header .headerBottom>div>a{
+    display: block;
+    color:#333;
+    line-height: 40px;
+    font-size: 15px;
+    text-align: center;
+}
+header .headerBottom>div>a:hover{
+    color: #0081cc
+}
+header .headerBottom .mainNav{
+    width: 220px;
+    background: #0081cc;
+    margin-left: 0;
+}
+header .headerBottom .mainNav>a{
+    color: #fff
+}
+header .headerBottom .mainNav>a:hover{
+    color: rgb(209, 0, 0)
+}
+/* 头部结束 */
+
+/* 脚部样式 */
+footer{
+    width: 1090px;
+    height: 225px;
+    margin: 30px auto 0;
+}
+footer .qrCodeBox{
+    overflow: hidden;
+    height: 225px;
+    border: 1px solid #999;
+}
+footer .qrCodeBox .qrCode{
+    width: 362px;
+    height: 150px;
+    margin-top: 30px;
+}
+footer .qrCodeBox .qrCode:nth-child(2){
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa
+}
+footer .qrCodeBox .qrCodeImg{
+    width: 105px;
+    height: 105px;
+    margin: 20px auto;
+}
+footer .qrCodeBox .qrCodeImg img{
+    width: 100%;
+    height: 100%
+}
+footer .qrCodeBox .qrCodeInfo{
+    width: 362px;
+    text-align: center;
+    font-size: 16px;
+}
+.copyRight{
+    border-top: 1px solid #000;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #0081cc;
+    line-height:20px;
+    text-align: center;
+    margin: 20px auto 0;
+    color: #fff
+}
+/* 脚部结束 */

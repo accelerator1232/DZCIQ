@@ -1,0 +1,117 @@
+@import url('base.css');
+
+
+/* banner样式 */
+    .indexBanner{
+        width: 1200px;
+        margin: 0 auto;
+        height: 400px;
+    }
+    /* hui轮播图css */
+        .slider{position:relative;text-align:center; margin:0 auto;z-index:1}
+        .slider .bd,.slider .bd li,.slider .bd img{widows: 1200px; height:400px}/*请给每个幻灯片套个div并设置id，通过id重置这个地方的宽度，达到自定义效果*/
+        .slider .bd{z-index:2;overflow:hidden}
+        .slider .bd li{float:left;width: 100%;overflow:hidden; background-position:center; background-repeat:no-repeat}
+        .slider .bd li a{ display:block;width: 100%; height: 100%}
+        .slider .bd li img{display:block; width: 100%; height: 100%}
+        .slider .hd{ position: absolute; z-index: 3; left: 0; right: 0; bottom:10px; padding: 0 10px; text-align: center}
+        .slider .hd li{display:inline-block;text-align:center;margin-right:10px;cursor:pointer;background-color:#eee}
+        .slider .hd li.active{background-color:#0081cc}
+        /*圆点*/
+        .dots li{width:20px; height:20px;font-size:0px;line-height:0px;border-radius:50%}
+        /*数字*/
+        .numbox li{width:20px; height:20px; line-height:20px; font-size:13px;font-family:Arial;font-weight:bold; text-indent:inherit}
+        .numbox li.active{color:#fff}
+        /*长方条*/
+        .rectangle li{width:38px; height:5px;font-size:0px;line-height:0px;border: 1px solid #ccc}
+/* banner结束 */
+
+/* 菜单样式 */
+    .menu2{
+        width: 1090px;
+        height: 144px;
+        margin: 0 auto;
+    }
+    .menu2 .crumbs{
+        width: 1090px;
+        height: 51px;
+        line-height: 51px;
+        font-size: 12px;
+        border-bottom: 1px solid #999;
+        margin: 0 auto;
+    }
+    .menu2 .crumbs .path:after{
+        width: 10px;
+        content: ">";
+        margin-left: 5px;
+    }
+    .menu2 .crumbs .path:last-child:after{
+        content: ""
+    }
+    .menu2 .classifyBox{
+        width: 1090px;
+        height: 46px;
+        line-height: 46px;
+        border-bottom: 1px dashed #aaa;
+    }
+    .menu2 .classifyBox a{
+        margin-left: 20px;
+    }
+    .menu2 .classifyBox a.active{
+        color: #0081cc;
+    }
+/* 菜单结束 */
+
+/* 主体样式 */
+
+    .toCart a{
+        width: 92px;
+        height: 92px;
+        border-radius: 5px;
+        background: url(../img/cart.jpg) no-repeat center #fff;
+        background-size: contain;
+        border: 1px solid #aaa;
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+        z-index: 999;
+    }
+    .toCart a:hover{
+        box-shadow: #aaa 0 0 3px;
+    }
+    .main{
+        width: 1090px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .main a{
+        display: block;
+    }
+    .main .item{
+        width: 263px;
+        height: 350px;
+        padding: 0;
+        margin: 30px 10px 0 0;
+        border: 1px solid #ddd;
+    }
+    .main .item:nth-child(4n){
+        margin-right: 0;
+    }
+    .main .item img{
+        border-bottom: 1px solid #ccc;
+    }
+    .main .item .itemName{
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        line-height: 50px;
+    }
+    .main .item .itemPrice{
+        width: 100%;
+        text-align: center;
+        color: #0081cc;
+        font-size: 14px;
+        line-height: 20px;
+    }
+/* 主体结束 */
+

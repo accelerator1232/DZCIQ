@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="stylesheet" type="text/css" href="../../static/h-ui/css/H-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../lib/Hui-iconfont/1.0.8/iconfont.min.css" />
+    <script src='../../lib/jquery/1.9.1/jquery.js'></script>
+    <script type="text/javascript" src="../../lib/jquery.validation/1.14.0/jquery.validate.js"></script>
+    <script type="text/javascript" src="../../lib/jquery.validation/1.14.0/validate-methods.js"></script>
+    <script type="text/javascript" src="../../lib/jquery.validation/1.14.0/messages_zh.js"></script>
+    <title>东舟-中建CI-注册页面</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <meta name="keywords" content="中国建筑 品牌CI建设 东舟品牌">
+    <meta name="description" content="">
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="lib/html5shiv.js"></script>
+        <script type="text/javascript" src="lib/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <link href="static/h-ui/css/H-ui.ie.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--[if IE 6]>
+        <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+        <script>DD_belatedPNG.fix('*');</script>
+    <![endif]-->
+</head>
+<script>
+    $(function(){
+        $('#reg').validate()
+    })
+</script>
+<body>
+    <!-- 顶部导航 -->
+    <div class="headNav">
+        <div class="headNavBox">
+            <div class="addressBox">
+                <div class="addressIcon fl"></div>
+                <div class="address fl">北京</div>
+            </div>
+            <div class="nav fr">
+                <nav class="headerNav fl">
+                    <a href="" style="color:#b81c2b">登录</a>
+                </nav>
+                <!-- <nav class="headerNav fl">
+                    <a href="">注册</a>
+                </nav> -->
+                <nav class="headerNav fl" style="margin-left:50px">
+                    <a href="http://www.d-ddd.com" style="color:#b81c2b">东舟军创</a>
+                </nav>
+                <nav class="headerNav fl">
+                    <a href="http://www.dzjcpp.com" style="color:#b81c2b">东舟品牌</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- 注册表单 -->
+    <form action="" method="post" class='register' id='reg'>
+        <!-- Logo -->
+        <div class="logoR">
+            <img src="../img/logo.png">
+        </div>
+        <ul>
+            <li>
+                <label for="name">用户名：</label>
+                <input type="text" name="name" id="name" autocomplete="off" required minlength=2>
+            </li>
+            <li>
+                <label for="tel">手机号：</label>
+                <input type="text" name="tel" id="tel" autocomplete="off" required isMobile='true'>
+            </li>
+            <li>
+                <label for="tel">邮箱：</label>
+                <input type="text" name="email" id="email" autocomplete="off" required email='true'> 
+            </li>
+            <li>
+                <label for="password">密码：</label>
+                <input type="password" name="password" id="pw" autocomplete="off" required minlength=6>
+            </li>
+            <li>
+                <label for="repassword">确认密码：</label>
+                <input type="password" name="repassword" id="rpw" autocomplete="off" required equalTo="#pw">
+            </li>
+            <li>
+                <input type="submit" value='立即注册'>
+            </li>
+        </ul>
+    </form>
+    <!-- 底部 -->
+    <footer>
+        <div class="qrCodeBox">
+            <div class="qrCode fl">
+                <div class="qrCodeImg">
+                    <img src="../img/dzjc.jpg">
+                </div>
+                <div class="qrCodeInfo"><a href="http://www.d-ddd.com">东舟军创</a></div>
+            </div>
+            <div class="qrCode fl">
+                <div class="qrCodeImg">
+                    <img src="../img/dzjcpp.jpg">
+                </div>
+                <div class="qrCodeInfo"><a href="http://www.dzjcpp.com">东舟品牌</a></div>
+            </div>
+            <div class="qrCode fl">
+                <div class="qrCodeImg">
+                    <img src="../img/wechatQr.jpg">
+                </div>
+                <div class="qrCodeInfo">军创品牌公众号</div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyRight">
+        <p>地 址：北京市建国路甲29号兴福商厦3F/4F | 邮 编：100024</p>
+        <p>邮 箱：bfbrand@163.com dongzhousheji@126.com | 人才招聘：dongzhousheji@126.com</p>
+        <p>本站内所有图文内容,均归北京东舟或创作者所有,未经许可,不得转载. 2007-2013 DonSorDesign京ICP备13008798号-1</p>
+    </div>
+</body>
+
+</html>
